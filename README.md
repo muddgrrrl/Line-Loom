@@ -1,6 +1,20 @@
+<p align="center">
+  <img src="readme-banner.png" width="920" alt="Line Loom. Inspect and normalize line endings · CRLF → LF · Convert files for consistent line endings.">
+</p>
+
 # Line Loom
 
 See whether a UTF-8 text file mixes Unix, Windows, or classic Mac line endings. Convert it when you need a consistent format.
+
+## At a glance
+
+| Task | How |
+| --- | --- |
+| **Inspect a file** | Pass a UTF-8 file to count LF, CRLF, and CR endings. |
+| **Normalize line endings** | Use `--to lf` or `--to crlf` with `-o`. |
+| **Keep the source** | Write the converted text to a new path. |
+
+## Quick start
 
 ```sh
 python3 line_loom.py notes.txt
