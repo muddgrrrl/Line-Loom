@@ -31,7 +31,8 @@ def main():
         else:
             for style, count in inspect(data).items():
                 print(f"{style:<4} {count}")
-            print(f"Final line ending: {'yes' if data.endswith((b'\r', b'\n')) else 'no'}")
+            final_ending = data.endswith((b'\r', b'\n'))
+            print(f"Final line ending: {'yes' if final_ending else 'no'}")
     except (OSError, ValueError) as error:
         parser.error(str(error))
 

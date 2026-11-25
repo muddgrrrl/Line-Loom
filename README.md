@@ -22,3 +22,11 @@ python3 line_loom.py notes.txt --to lf -o notes-clean.txt
 ```
 
 Requires Python 3.8+. Conversion preserves the UTF-8 BOM and the presence or absence of a final line ending. The destination must be a new file. [MIT](LICENSE)
+
+## Development
+
+Run the same dependency-free regression tests used in GitHub Actions.
+
+```sh
+python3 -m unittest discover -s tests -v
+```
